@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+
+
+@tailwind utilities;
+
+.btn {
+    @apply px-5 py-3 shadow-sm transition ease-in-out duration-300  leading-snug whitespace-nowrap text-base font-semibold;
+  }
+  
+  .btn.btn-sm {
+    @apply px-4 py-2 text-sm;
+  }
+  
+  .btn.btn-lg {
+    @apply text-lg px-8 py-4;
+  }
+  
+  .btn-primary {
+    @apply text-white bg-primary hover:bg-primaryLight;
+  }
+  .btn-outline-primary{
+    @apply text-primary  hover:bg-primary hover:text-white border border-primary
+}
+  
+.humburger{
+    
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    transition: all .25s;
+}
+.humburger-top,
+.humburger-middle,
+.humburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: black;
+    transform: rotate(0);
+    transition: all .5s;
+}
+
+.humburger-middle{
+    transform: translateY(7px);
+}
+.humburger-bottom{
+    transform: translateY(14px);
+}
+
+.open .humburger{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .humburger-middle{
+    display: none;
+}
+
+.open .humburger-top{
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .humburger-bottom{
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+/* 
+.btn-primary {
+    @apply  bg-brightRed rounded-full p-3 px-6 pt-2  text-white hover:bg-brightRedLight;
+  }
+
+.btn-outline-primary{
+    @apply p-3 px-6 pt-2  font-bold text-brightRed bg-white rounded-full hover:bg-brightRed hover:text-white border-2 hover:border-inherit
+} */
