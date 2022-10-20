@@ -1,6 +1,6 @@
 {
   
-  "name": "tailwind-landing",
+  "name": "tailwind-components",
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
