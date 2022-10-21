@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 .btn {
-    @apply px-5 py-3 flex items-center shadow-sm transition ease-in-out duration-300  leading-snug whitespace-nowrap text-base font-semibold;
+    @apply px-6 pt-1 pb-2 rounded text-center shadow-sm transition ease-in-out duration-300  leading-snug whitespace-nowrap text-base font-semibold;
   }
   
   .btn.btn-sm {
-    @apply px-4 py-2 text-sm;
+    @apply px-4  text-sm;
   }
   
   .btn.btn-lg {
@@ -17,11 +17,11 @@
   }
   
   .test{
-    color: hsl(152, 69%, 41%);
+    color: hsl(182, 73%, 49%);
 
   }
   .btn-primary {
-    @apply text-white bg-primary hover:bg-primaryLight;
+    @apply text-white bg-primary hover:bg-primaryDark;
   }
   .btn-secondary {
     @apply text-white bg-secondary hover:bg-secondaryLight;
@@ -42,7 +42,7 @@
     @apply text-white bg-dark hover:bg-darkLight;
   }
   .btn-light {
-    @apply text-white bg-light hover:bg-light;
+    @apply text-dark bg-light hover:bg-lightLight;
   }
   .btn-outline-primary{
     @apply text-primary  hover:bg-primary hover:text-white border border-primary
